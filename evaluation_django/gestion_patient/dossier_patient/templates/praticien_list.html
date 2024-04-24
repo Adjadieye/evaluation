@@ -1,0 +1,16 @@
+<!-- praticien_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Praticiens</title>
+</head>
+<body>
+    <h1>Liste des Praticiens</h1>
+    <ul>
+    {% for praticien in praticiens %}
+        <li>{{ praticien.nom }} {{ praticien.prenom }} - {{ praticien.specialite }} - {{ praticien.adresse_cabinet }} - {{ praticien.numero_telephone }} - {{ praticien.email }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
